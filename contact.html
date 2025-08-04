@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 節約ボディ | 株式会社イマイチジ(imaichiji)</title>
+    <meta name="description" content="節約ボディへのお問い合わせ・ご相談はこちらから。無料セミナーの参加申し込み、ライフプラン相談の予約など、お気軽にお問い合わせください。">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10b981',
+                        secondary: '#3b82f6'
+                    },
+                    borderRadius: {
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "株式会社イマイチジ",
+        "alternateName": "imaichiji",
+        "url": "https://setsuyakubody.com",
+        "logo": "https://setsuyakubody.com/logo.png",
+        "description": "健康的な節約術と資産形成を両立する総合サポートサービス",
+        "foundingDate": "2024-04",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "寺尾本町３丁目１２－３３",
+            "addressLocality": "綾瀬市",
+            "addressRegion": "神奈川県",
+            "postalCode": "252-0000",
+            "addressCountry": "JP"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "070-9216-1971",
+            "contactType": "customer service",
+            "availableLanguage": "Japanese"
+        },
+        "sameAs": [
+            "https://line.me/R/ti/p/@685pbgid"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "お問い合わせ・ご相談",
+        "description": "無料セミナーの参加申し込み、ライフプラン相談の予約など、お気軽にお問い合わせください",
+        "url": "https://setsuyakubody.com/contact.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "株式会社イマイチジ"
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <div class="font-['Pacifico'] text-2xl text-primary">logo</div>
+                        <div class="ml-3 text-lg font-bold text-gray-900">節約ボディ</div>
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#services" class="text-gray-700 hover:text-primary transition-colors">サービス内容</a>
+                    <a href="index.html#features" class="text-gray-700 hover:text-primary transition-colors">特徴</a>
+                                            <a href="company.html" class="text-gray-700 hover:text-primary transition-colors">会社情報</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary transition-colors">お問い合わせ</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center text-sm text-gray-600">
+                        <div class="w-4 h-4 flex items-center justify-center mr-2">
+                            <i class="ri-phone-line text-primary"></i>
+                        </div>
+                        <a href="tel:070-9216-1971" class="hover:text-primary transition-colors">070-9216-1971</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">お問い合わせ・ご相談</h1>
+                <p class="text-lg text-gray-600">
+                    無料セミナーの参加申し込み、ライフプラン相談の予約など、お気軽にお問い合わせください
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+                <form id="contact-form" class="space-y-8">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">お名前 <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">メールアドレス <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-sm font-semibold text-gray-900 mb-2">電話番号</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label for="inquiry-type" class="block text-sm font-semibold text-gray-900 mb-2">お問い合わせ種別 <span class="text-red-500">*</span></label>
+                        <select id="inquiry-type" name="inquiry-type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="">選択してください</option>
+                            <option value="seminar">無料セミナー参加申し込み</option>
+                            <option value="consultation">ライフプラン相談予約</option>
+                            <option value="accounting">記帳代行サービスについて</option>
+                            <option value="welfare">福利厚生サービスについて</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">お問い合わせ内容 <span class="text-red-500">*</span></label>
+                        <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="ご質問やご相談内容を詳しくお聞かせください"></textarea>
+                    </div>
+                    
+                    <div class="bg-primary/5 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-900 mb-4">お問い合わせ後の流れ</h3>
+                        <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 flex items-center justify-center bg-primary text-white rounded-full text-xs font-bold flex-shrink-0 mt-0.5">1</div>
+                                <div>お問い合わせ内容を確認後、24時間以内にご返信いたします</div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 flex items-center justify-center bg-primary text-white rounded-full text-xs font-bold flex-shrink-0 mt-0.5">2</div>
+                                <div>ご希望に応じて、電話またはオンラインでの詳細なご相談を承ります</div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 flex items-center justify-center bg-primary text-white rounded-full text-xs font-bold flex-shrink-0 mt-0.5">3</div>
+                                <div>セミナー参加や個別相談の日程調整を行います</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" id="privacy" name="privacy" required class="mt-1">
+                        <label for="privacy" class="text-sm text-gray-600">
+                            <a href="privacy.html" class="text-primary hover:underline">プライバシーポリシー</a>に同意し、個人情報の取り扱いについて理解しました
+                        </label>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="button" id="send-email" class="bg-primary text-white px-12 py-4 !rounded-button text-lg font-semibold hover:bg-primary/90 transition-colors">
+                            お問い合わせを送信する
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-6">お急ぎの場合は、お電話でもお気軽にお問い合わせください</p>
+                <a href="tel:070-9216-1971" class="inline-flex items-center space-x-2 bg-secondary text-white px-8 py-3 !rounded-button font-semibold hover:bg-secondary/90 transition-colors">
+                    <i class="ri-phone-line"></i>
+                    <span>070-9216-1971</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="font-['Pacifico'] text-xl text-primary">logo</div>
+                        <div class="ml-3 text-lg font-bold">節約ボディ</div>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        健康的な節約術と資産形成を両立する総合サポートサービス
+                    </p>
+                    <div class="text-sm text-gray-400">
+                        <div>株式会社イマイチジ（imaichiji）</div>
+                        <div>神奈川県綾瀬市寺尾本町３丁目１２－３３</div>
+                        <div>営業時間：10:00～18:00</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4">サービス</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">節約ボディセミナー</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">ライフプラン相談</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">記帳代行サービス</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">福利厚生サービス</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="https://line.me/R/ti/p/@685pbgid" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">公式LINE</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">お問い合わせフォーム</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition-colors">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 株式会社イマイチジ（imaichiji）. All rights reserved.</p>
+            </div>
+        </div>
+        </footer>
+
+    <script>
+        document.getElementById('send-email').addEventListener('click', function() {
+            // フォームデータの取得
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const inquiryType = document.getElementById('inquiry-type').value;
+            const message = document.getElementById('message').value;
+            
+            // 必須項目のチェック
+            if (!name || !email || !inquiryType || !message) {
+                alert('必須項目を入力してください。');
+                return;
+            }
+            
+            // メール本文の作成
+            const subject = '節約ボディ お問い合わせ';
+            const body = `
+お名前: ${name}
+メールアドレス: ${email}
+電話番号: ${phone || '未入力'}
+お問い合わせ種別: ${inquiryType}
+
+お問い合わせ内容:
+${message}
+
+---
+このメールは節約ボディのウェブサイトから送信されました。
+            `.trim();
+            
+            // メールリンクの作成と実行
+                           const mailtoLink = `mailto:setsuyakubody@imaichiji.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html> 
